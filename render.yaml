@@ -7,3 +7,5 @@ services:
     envVars:
       - key: SERVER_PORT
         value: 2333
+      - key: LAVALINK_SERVER_PASSWORD
+        value: juanpass
