@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: lavalink
+    env: java
+    plan: free
+    startCommand: java -jar Lavalink.jar
+    envVars:
+      - key: SERVER_PORT
+        value: 2333
