@@ -24,7 +24,7 @@ lavalink:
         enabled: false
     sentry:
       dsn: ""
-    logging:
+logging:
   level:
     root: INFO
     lavalink: INFO
