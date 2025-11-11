@@ -1,10 +1,10 @@
 server:
-  port: 2333
+  port: ${SERVER_PORT}
   address: 0.0.0.0
 
 lavalink:
   server:
-    password: "juanpass"
+    password: ${LAVALINK_SERVER_PASSWORD}
     sources:
       youtube: false
       soundcloud: true
@@ -19,3 +19,12 @@ lavalink:
     youtubeSearchEnabled: true
     soundcloudSearchEnabled: true
     gc-warnings: true
+    metrics:
+      prometheus:
+        enabled: false
+    sentry:
+      dsn: ""
+    logging:
+  level:
+    root: INFO
+    lavalink: INFO
