@@ -6,13 +6,24 @@ lavalink:
   server:
     password: ${LAVALINK_SERVER_PASSWORD}
     sources:
-      youtube: false
-      soundcloud: true
-      bandcamp: true
-      twitch: true
-      vimeo: true
-      http: true
-      local: false
+      youtube:
+        enabled: true
+        oauth:
+          enabled: true
+          accessToken: ${YOUTUBE_ACCESS_TOKEN}
+          clients: MUSIC,ANDROID_TESTSUITE,WEB
+      soundcloud:
+        enabled: true
+      bandcamp:
+        enabled: true
+      twitch:
+        enabled: true
+      vimeo:
+        enabled: true
+      http:
+        enabled: true
+      local:
+        enabled: false
     bufferDurationMs: 400
     youtubePlaylistLoadLimit: 6
     playerUpdateInterval: 5
@@ -24,6 +35,7 @@ lavalink:
         enabled: false
     sentry:
       dsn: ""
+
 logging:
   level:
     root: INFO

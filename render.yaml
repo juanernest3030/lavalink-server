@@ -4,8 +4,3 @@ services:
     env: java
     plan: free
     startCommand: java -jar Lavalink.jar
-    envVars:
-      - key: SERVER_PORT
-        value: 2333
-      - key: LAVALINK_SERVER_PASSWORD
-        value: juanpass
