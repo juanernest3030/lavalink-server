@@ -11,7 +11,10 @@ lavalink:
         oauth:
           enabled: true
           accessToken: ${YOUTUBE_ACCESS_TOKEN}
-          clients: MUSIC,ANDROID_TESTSUITE,WEB
+          clients:
+            - MUSIC
+            - ANDROID_TESTSUITE
+            - WEB
       soundcloud:
         enabled: true
       bandcamp:
