@@ -26,7 +26,7 @@ lavalink:
       http:
         enabled: true
       local:
-        enabled: false
+        enabled: true
     bufferDurationMs: 400
     youtubePlaylistLoadLimit: 6
     playerUpdateInterval: 5
@@ -35,7 +35,7 @@ lavalink:
     gc-warnings: true
     metrics:
       prometheus:
-        enabled: false
+        enabled: true
     sentry:
       dsn: ""
 
